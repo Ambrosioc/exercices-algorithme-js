@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// Exercice 1 : Somme des éléments
+			// Écris une fonction qui prend un tableau de nombres en entrée et retourne la somme de tous les éléments.
+
+			// Mehtode 1 for loop (boucle for)
+			function sommeDesElements(tableau) {
+				if (Array.isArray(tableau)) {
+					let somme = 0;
+					for (let i = 0; i < tableau.length; i++) {
+						somme += tableau[i];
+					}
+					return somme;
+				} else {
+					return "Ce n'est pas un tableau";
+				}
+			}
+			console.log(sommeDesElements([1, 2, 3, 4])); // Devrait renvoyer 10
+			console.log(sommeDesElements([5, 10, 15])); // Devrait renvoyer 30
+
+			// Mehtode 2 reduce (réduire)
+			function sommeDesElements2(tableau) {
+				if (Array.isArray(tableau)) {
+					return tableau.reduce((a, b) => a + b, 0);
+				} else {
+					return "Ce n'est pas un tableau";
+				}
+			}
+			console.log(sommeDesElements2([11, 2, 3, 4])); // Devrait renvoyer 10
+			console.log(sommeDesElements2([5, 10, 15])); // Devrait renvoyer 30
+
+			// Mehtode 3 forEach (pour chaque)
+			function sommeDesElements3(tableau) {
+				if (Array.isArray(tableau)) {
+					let somme = 0;
+					tableau.forEach((element) => {
+						somme += element;
+					});
+					return somme;
+				} else {
+					return "Ce n'est pas un tableau";
+				}
+			}
+			console.log(sommeDesElements3([1, 21, 3, 4])); // Devrait renvoyer 10
+			console.log(sommeDesElements3([5, 10, 15])); // Devrait renvoyer 30
+
+			// Mehtode 4 for of (boucle for)
+			function sommeDesElements4(tableau) {
+				if (Array.isArray(tableau)) {
+					let somme = 0;
+					for (const element of tableau) {
+						somme += element;
+					}
+					return somme;
+				} else {
+					return "Ce n'est pas un tableau";
+				}
+			}
+			console.log(sommeDesElements4([1, 2, 31, 4])); // Devrait renvoyer 10
+			console.log(sommeDesElements4([5, 10, 15])); // Devrait renvoyer 30
+
+			// Mehtode 5 function map (carte)
+			function sommeDesElements5(tableau) {
+				if (Array.isArray(tableau)) {
+					let somme = 0;
+					tableau.map((element) => {
+						somme += element;
+					});
+					return somme;
+				} else {
+					return "Ce n'est pas un tableau";
+				}
+			}
+			console.log(sommeDesElements5([1, 2, 3, 41])); // Devrait renvoyer 10
+			console.log(sommeDesElements5([5, 10, 15])); // Devrait renvoyer 30
+
+			// Mehtode 6 function filter (filtre)
+			function sommeDesElements6(tableau) {
+				if (Array.isArray(tableau)) {
+					let somme = 0;
+					tableau.filter((element) => {
+						somme += element;
+					});
+					return somme;
+				} else {
+					return "Ce n'est pas un tableau";
+				}
+			}
+		</script>
+	</body>
+</html>

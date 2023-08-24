@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// Exercice 3 : Nombre Premier
+			// Écris une fonction qui détermine si un nombre donné est premier.
+
+			function estNombrePremier(nombre) {
+				if (typeof nombre === "number") {
+					if (nombre > 1) {
+						for (let i = 2; i < nombre; i++) {
+							if (nombre % i === 0) {
+								return false;
+							} else {
+								return true;
+							}
+						}
+					} else {
+						console.log("Le nombre doit être supérieur à 1");
+					}
+				} else {
+					console.log("Ce n'est pas un nombre");
+				}
+			}
+			console.log(estNombrePremier(7)); // Devrait renvoyer true
+			console.log(estNombrePremier(10)); // Devrait renvoyer false
+			console.log(estNombrePremier("1")); // Devrait renvoyer Le nombre doit être supérieur à 1
+		</script>
+	</body>
+</html>

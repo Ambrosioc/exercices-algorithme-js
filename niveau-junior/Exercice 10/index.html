@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// Exercice 10 : Maximum dans un tableau
+			// Écris une fonction qui trouve le maximum d'un tableau de nombres.
+
+			function maximumDansTableau(tableau) {
+				let maximum = tableau[0]; // On suppose que le premier élément est le maximum
+				for (let i = 1; i < tableau.length; i++) {
+					if (tableau[i] > maximum) {
+						maximum = tableau[i];
+					}
+				}
+				return maximum;
+			}
+
+			console.log(maximumDansTableau([4, 9, 2, 7])); // Devrait renvoyer 9
+			console.log(maximumDansTableau([-3, -8, -1])); // Devrait renvoyer -1
+		</script>
+	</body>
+</html>

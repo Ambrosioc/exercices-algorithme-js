@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// Exercice 6 : Compter les voyelles
+			// Écris une fonction qui compte le nombre de voyelles dans une chaîne de caractères donnée.
+
+			function compterVoyelles(chaine) {
+				if (typeof chaine === "string") {
+					let voyelles = ["a", "e", "i", "o", "u", "y"];
+					let compteur = 0;
+					for (let i = 0; i < chaine.length; i++) {
+						if (voyelles.includes(chaine[i])) {
+							compteur++;
+						}
+					}
+					return compteur;
+				}
+			}
+
+			console.log(compterVoyelles("hello")); // Devrait renvoyer 2
+			console.log(compterVoyelles("algorithm")); // Devrait renvoyer 3
+			console.log(compterVoyelles("cryptographique")); // Devrait renvoyer
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// Exercice 8 : Puissance d'un nombre
+			// Écris une fonction qui calcule la puissance d'un nombre donné à un exposant donné (par exemple, 2^3 = 8)
+
+			function puissance(base, exposant) {
+				let resultat = 1;
+				for (let i = 0; i < exposant; i++) {
+					resultat *= base;
+				}
+				return resultat;
+			}
+
+			console.log(puissance(2, 3)); // Devrait renvoyer 8
+			console.log(puissance(5, 2)); // Devrait renvoyer 25
+		</script>
+	</body>
+</html>

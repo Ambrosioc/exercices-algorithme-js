@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// Exercice 5 : Tri à bulles
+			// Écris une fonction qui effectue un tri à bulles sur un tableau de nombres.
+
+			function triABulles(array) {
+				if (Array.isArray(array)) {
+					array.sort((a, b) => a - b);
+					return array;
+				}
+			}
+			console.log(triABulles([4, 2, 9, 1, 7])); // Devrait renvoyer [1, 2, 4, 7, 9]
+		</script>
+	</body>
+</html>

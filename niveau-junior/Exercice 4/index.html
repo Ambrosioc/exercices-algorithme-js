@@ -13,7 +13,7 @@
 			function fibonacci(n) {
 				if (typeof n === "number") {
 					let fibonacci = [0, 1];
-					console.log("fibonacci", fibonacci);
+					// console.log("fibonacci", fibonacci);
 					for (let i = 2; i < n; i++) {
 						fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
 						console.log("fibonacci[i]", fibonacci[i]);
@@ -27,7 +27,32 @@
 			// console.log(fibonacci("10")); // Devrait afficher Ce n'est pas un nombre
 			// console.log(fibonacci(1)); // Devrait afficher [0, 1]
 
-			// Méthode 2
+			// Exercice 5 : Reduce People
+			const people = [
+				{ name: "Ambor", age: 31 },
+				{ name: "Lola", age: 31 },
+				{ name: "Amelie", age: 32 },
+				{ name: "Aurelia", age: 27 },
+			];
+
+			const resutl = people.reduce((acc, perso) => {
+				const age = perso.age;
+				if (acc[age] == null) acc[age] = [];
+				acc[age].push(perso);
+				return acc;
+			}, {});
+
+			console.log(resutl);
+
+			// Exercice 6: Somme des Nombre
+			const number = [14, 16, 20, 60, 80];
+
+			const numberResult = number.reduce(
+				(acc, currentValue) => acc + currentValue,
+				0
+			);
+
+			console.log(numberResult);
 		</script>
 	</body>
 </html>

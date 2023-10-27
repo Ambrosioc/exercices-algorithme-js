@@ -13,5 +13,3 @@ Dans le dossier `niveau-intermediaire`, vous trouverez des exercices plus avanc�
 ## Niveau Sénior
 
 Le dossier `niveau-senior` contient des exercices avancés conçus pour les personnes ayant une solide expérience en programmation et en algorithmique. Ces exercices abordent des problèmes complexes tels que les graphes, les algorithmes de recherche avancés et d'autres sujets avancés.
-
-N'hésitez pas à personnaliser ce texte selon vos besoins et à ajouter d'autres informations pertinentes si nécessaire.

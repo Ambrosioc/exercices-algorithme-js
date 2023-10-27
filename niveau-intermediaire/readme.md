@@ -14,5 +14,3 @@ Ce dossier contient une série d'exercices d'algorithmes de niveau intermédiair
 18. Conversion de nombre romain
 19. Sélection d'éléments uniques
 20. Tri par comptage
-
-Pour obtenir des détails sur chaque exercice, veuillez consulter les fichiers individuels dans ce dossier.

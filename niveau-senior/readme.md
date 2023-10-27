@@ -14,5 +14,3 @@ Ce dossier contient une série d'exercices d'algorithmes de niveau sénior en Ja
 28. Tri de Fusion
 29. Algorithme A\* (A Star)
 30. Recherche de Sous-séquence Commune Maximale
-
-Pour obtenir des détails sur chaque exercice, veuillez consulter les fichiers individuels dans ce dossier.
